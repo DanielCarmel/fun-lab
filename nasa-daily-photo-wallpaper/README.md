@@ -5,7 +5,11 @@ Every day, NASA posts a beautiful astronomy picture on its [Astronomy Picture of
 You can add this script to your Startup Applications Preferences and it will automatically update your wallpaper every day.
 
 1. download the script localy
-2. open crontab using `crontab -e ` command
+2. give the script execute permission
+    ```
+    $ chmod +x daily-nasa.sh
+    ```
+2. open crontab using `crontab -e` command
 3. enter the following to the end of the file:
     ```
     0 * * * * /<PATH_TO_SCRIPT>/daily-nasa.sh
